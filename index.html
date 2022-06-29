@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <link rel="stylesheet" href="style.css">
+  <title>IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      background-image: url('/images/pattern-bg.png');
+    }
+
+    .attribution a {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="heading-container">
+      <h1 class="heading">IP Address Tracker</h1>
+      <form action="/ip" class="form">
+        <input type="text" placeholder="Search for any IP address or domain">
+        <button>></button>
+      </form>
+    </div>
+  </header>
+  <main class="main">
+    <div class="tracker-card">
+
+      <div class="tracker-data">
+        <h2>IP Address</h2>
+        <p class="data address">142.243.136.34</p>
+      </div>
+      <div class="tracker-data">
+        <h2>Location</h2>
+        <p class="data location">Québec, CA</p>
+      </div>
+      <div class="tracker-data">
+        <h2>Timezone</h2>
+        <p class="data timezone">UTC-04:00</p>
+      </div>
+      <div class="tracker-data">
+        <h2>ISP</h2>
+        <p class="data isp">City of Montreal</p>
+      </div>
+
+    </div>
+    <div id="map"></div>
+  </main>
+
+
+
+
+
+
+
+
+  <!-- add offset value dynamically using the API -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Emmanuel Mavuangi</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
