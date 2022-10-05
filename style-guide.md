@@ -5,7 +5,7 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
-- Desktop: 1448px
+- Desktop: 1449px
 
 ## Colors
 
