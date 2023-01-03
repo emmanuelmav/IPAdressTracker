@@ -1,4 +1,4 @@
-// IPFY API
+// IPFY API //
 const form = document.querySelector('form');
 const address = document.querySelector('.address');
 const local = document.querySelector('.location');
